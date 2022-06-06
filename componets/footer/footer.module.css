@@ -1,0 +1,21 @@
+.linkText {
+    color: white;
+}
+
+#footerTitle {
+    color: white;
+    font-size: 24px;
+}
+
+#footer {
+    background-color: #532a01 !important;
+    margin-top: 400px;
+    
+    bottom: 0;
+}
+
+@media only screen and (min-width: 1680px){
+    #footer {
+        margin-top: 650px;
+    }
+}

@@ -1,0 +1,29 @@
+.about-section {
+    margin-top: 700px;
+    margin-bottom: 500px;
+}
+
+
+#rowMargin {
+    margin-top: 200px;
+}
+
+.aboutText {
+    text-indent: 30px;
+}
+
+
+
+@media only screen and (max-width: 1050px){
+    .row1 {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+    }
+    .row2 {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .titleAbout {
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,36 @@
+.gods-section {
+    margin-top: 200px;
+    margin-bottom: 500px;
+}
+
+
+#rowMargin {
+    margin-top: 200px;
+}
+
+
+#imageCarousel {
+    height: 700px;
+}
+
+
+.descriptionText {
+    text-indent: 30px;
+}
+
+
+@media only screen and (max-width: 750px){
+    .row1 {
+        display: flex !important;
+        flex-direction: row-reverse !important;
+    }
+    #rowMargin {
+        margin-top: 100px;
+    }
+    .godsTitle {
+        margin-top: 50px;
+    }
+    #imageCarousel {
+        height: 500px;
+    }
+}
