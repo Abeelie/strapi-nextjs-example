@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/globals.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/globals.css';
 import {ApolloClient, ApolloProvider, InMemoryCache} from "@apollo/client";
 import Navbar from '../componets/navbar/Navbar';
 import Footer from "../componets/footer/Footer";
