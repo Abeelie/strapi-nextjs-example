@@ -21,8 +21,8 @@ const Navbars = () => {
 
 
     const handleLogOut = () => {
-        Router.push("/");
-        setTimeout(() => destroyCookie(null, "jwt"), 3000);
+        destroyCookie(null, "jwt");
+        Router.push("/login");
     }
 
 
