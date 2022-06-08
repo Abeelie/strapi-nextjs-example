@@ -11,6 +11,7 @@ class MyDocument extends Document {
             <Html>
                 <Head>
                     <link rel="icon" href="/favicon.ico"/>
+                    <title>Ancient Egypt</title>
                 </Head>
                 <body>
                     <Main/>
