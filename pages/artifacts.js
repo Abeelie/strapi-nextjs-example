@@ -2,6 +2,7 @@ import React from "react";
 import { Spinner } from "react-bootstrap";
 import { useArtifactsPage } from "../hooks/useArtifactsPage";
 import Artifacts from "../componets/artifacts/Artifacts";
+import Head from "next/head";
 
 
 export default function ArtifactsPage() {
@@ -19,6 +20,9 @@ export default function ArtifactsPage() {
 
     return (
         <div>
+            <Head>
+                <title>Artifacts</title>
+            </Head>
             <Artifacts data={data} />
         </div>
     )

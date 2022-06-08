@@ -1,6 +1,7 @@
 import BadGodsContent from "../componets/godscontent/BadGodsContent";
 import { useBadGodsPage } from "../hooks/useBadGodsPage";
 import { Spinner } from "react-bootstrap";
+import Head from "next/head";
 
 export default function GoodGods() {
   const {data, loading, error} = useBadGodsPage();
@@ -17,7 +18,10 @@ export default function GoodGods() {
 
 
   return (
-    <div className={""}>
+    <div>
+      <Head>
+        <title>Bad Gods</title>
+      </Head>
       <BadGodsContent data={data} />
     </div>
   )

@@ -2,6 +2,7 @@ import { useHomePage } from '../hooks/useHomePage';
 import Hero from '../componets/hero/Hero';
 import { Spinner } from "react-bootstrap";
 import About from '../componets/about/about';
+import Head from "next/head";
 
 export default function Home() {
   const {data, loading, error} = useHomePage();
@@ -15,7 +16,10 @@ export default function Home() {
   if(error) return <div>error</div>
 
   return (
-    <div className={""}>
+    <div>
+      <Head>
+        <title>Home</title>
+      </Head>
       <Hero data={data} />
       <About data={data} />
     </div>

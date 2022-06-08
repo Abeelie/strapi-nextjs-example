@@ -3,6 +3,7 @@ import styles from "../styles/register.module.css";
 import Router from "next/router";
 import axios from "axios";
 import swal from 'sweetalert';
+import Head from "next/head";
 
 const Register = () => {
     const [email, setEmail] = useState('');
@@ -39,6 +40,10 @@ const Register = () => {
     }
 
     return (
+        <>
+        <Head>
+            <title>Register</title>
+        </Head>
         <div className="container" id={styles.registerContainer}>
             <div className="row">
                 <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
@@ -69,6 +74,7 @@ const Register = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

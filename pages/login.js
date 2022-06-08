@@ -4,6 +4,7 @@ import Router from "next/router";
 import axios from "axios";
 import swal from 'sweetalert';
 import { setCookie } from "nookies";
+import Head from "next/head";
 
 
 const Login = () => {
@@ -45,6 +46,10 @@ const Login = () => {
     }
 
     return (
+        <>
+        <Head>
+            <title>Login</title>
+        </Head>
         <div className="container" id={styles.loginContainer}>
             <div className="row">
                 <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
@@ -71,6 +76,7 @@ const Login = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 
